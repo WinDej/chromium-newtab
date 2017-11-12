@@ -1,0 +1,55 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(64, 69, 82);
+    color: rgb(179, 188, 202);
+    font-family: 'Lato', sans-serif;
+}
+
+.content {
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#clock {
+    font-size: 80px;
+    font-weight: 700;
+    margin-bottom: 130px;
+}
+
+form {
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input[type=text],
+select {
+    margin: 0 auto;
+    background-color: white;
+    width: 500px;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid rgb(179, 188, 202);
+    border-radius: 1px;
+    background-color: white;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+
+input[type=text]:focus,
+select:focus {
+    border: 1px solid #4285f4;
+}
