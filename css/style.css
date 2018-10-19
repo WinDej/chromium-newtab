@@ -23,7 +23,11 @@ body {
 #clock {
     font-size: 80px;
     font-weight: 700;
-    margin-bottom: 130px;
+}
+
+#date {
+    font-size: 30px;
+    margin-bottom: 50px;
 }
 
 form {
