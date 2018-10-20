@@ -18,5 +18,24 @@ function updateClock() {
 	$("#clock").html(currentTimeString);
 }
 
+function updateDate() {
+	var currentDate = new Date ();
+	var currentDay = currentDate.getDate ();
+	var currentMonth = currentDate.getMonth ();
+	var currentYear = currentDate.getFullYear ();
+
+	// Month names for displaying
+	const monthNames = ["January", "February", "March", "April", "May", "June",	"July", "August", "September", "October", "November", "December"];
+
+	// Compose the string for display
+	var currentDateString = currentDay + " " + monthNames[currentMonth] + " " + currentYear;
+
+	// Fill '#date' div with time
+	$("#date").html(currentDateString);
+}
+
 // Update clock
 setInterval('updateClock()', 0);
+
+// Update date
+setInterval('updateDate()', 0);
